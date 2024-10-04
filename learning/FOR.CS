@@ -15,11 +15,9 @@ namespace learning
             for (int i= 1; i <= 4; i = i + 1)
             {
                 int a;
-                Console.WriteLine("adad ravared konid:");
+                Console.WriteLine("adad ra vared konid:");
                 a= Convert.ToInt32(Console.ReadLine());
-
                 sum += a;
-                
             }
             Console.WriteLine("SUM:" + sum.ToString());
         }
