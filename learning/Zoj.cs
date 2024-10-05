@@ -11,11 +11,11 @@ namespace learning
         public static void AdadZoj();{
 for (int i= 0; i <= 100; i+ =2){
             
-            
+      Console.WriteLine(i);    
             
             }
 
-
+    Console.ReadLine(i);
 
 }
 
