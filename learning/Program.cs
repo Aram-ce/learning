@@ -3,4 +3,4 @@ using learning;
 
 //Sum.Sum4Number();
 //FOR.SumByFor();
-Zoj.AdadZoj();
+ForZoj.ForByZoj();
