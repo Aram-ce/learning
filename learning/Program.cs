@@ -2,4 +2,5 @@
 using learning;
 
 //Sum.Sum4Number();
-FOR.SumByFor();
+//FOR.SumByFor();
+Zoj.AdadZoj();
