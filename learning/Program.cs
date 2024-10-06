@@ -6,6 +6,8 @@ using learning;
 //ForZoj.ForByZoj()
 int a, b;
 a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(a*2);
+b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(a * b);
+
 
 
