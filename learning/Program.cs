@@ -4,6 +4,9 @@ using learning;
 //Sum.Sum4Number();
 //FOR.SumByFor();
 //ForZoj.ForByZoj();
-string a = "aaram";
-string b = "rohi";
-Console.WriteLine(b + " and " + a);
+
+int a = 10;
+int b = 20;
+
+int sum = a + b;
+Console.WriteLine(a + "+" +b + "=" + sum);
