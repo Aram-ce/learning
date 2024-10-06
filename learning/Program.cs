@@ -4,9 +4,8 @@ using learning;
 //Sum.Sum4Number();
 //FOR.SumByFor();
 //ForZoj.ForByZoj()
-string s, s1;
-s = Console.ReadLine();
-s1 = Console.ReadLine();
-Console.WriteLine(s + " kiss " + s1);
+int a, b;
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(a*2);
 
 
