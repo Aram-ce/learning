@@ -10,21 +10,23 @@ namespace learning
     {
         public static void ForByZoj()
         {
-            
-            for (int i = 1; i <= 100; i += 2)
-          
-
+            for (int i = 0; i <= 100; i += 2)
             {
                 Console.WriteLine(i);
+            }
+        }
+        public static void ForByZoj2()
+        {
+            int x;
 
-
+            x = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i <= x; i += 2)
+            {
+                Console.WriteLine(i);
             }
 
 
 
-
-
-           
 
 
 
