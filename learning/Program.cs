@@ -3,4 +3,7 @@ using learning;
 
 //Sum.Sum4Number();
 //FOR.SumByFor();
-ForZoj.ForByZoj();
+//ForZoj.ForByZoj();
+string a = "aaram";
+string b = "rohi";
+Console.WriteLine(b + " and " + a);
