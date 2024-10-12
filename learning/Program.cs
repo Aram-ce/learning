@@ -6,14 +6,10 @@ using learning;
 //ForZoj.ForByZoj2();
 int a;
 
-for (int i = 0; i <= 10; i++)
+for (int i = 0;i<=1000; i++)
 {
-
-    a = Convert.ToInt32(Console.ReadLine());
-    if (a % 2 == 0)
-        Console.WriteLine("number" + i + " is even");
-    else
-        Console.WriteLine(" number" + i + " is odd");
+    if (i % 2== 0 && i % 7==0)
+         Console.WriteLine(i);
 
 }
 
