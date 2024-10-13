@@ -4,14 +4,18 @@ using learning;
 //Sum.Sum4Number();
 //FOR.SumByFor();
 //ForZoj.ForByZoj2();
-int a;
+int d;
+int m;
+Console.WriteLine("day:");
+d = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("month:");
+m = Convert.ToInt32(Console.ReadLine());
+if (m<=6)
+    Console.WriteLine(((m-1)*31)+d);
+else 
 
-for (int i = 0;i<=1000; i++)
-{
-    if (i % 2== 0 && i % 7==0)
-         Console.WriteLine(i);
+    Console.WriteLine(((m-1)*30+d));
 
-}
 
 
 
