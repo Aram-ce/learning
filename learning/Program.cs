@@ -1,21 +1,31 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using learning;
+using System.ComponentModel.Design;
 
 //Sum.Sum4Number();
 //FOR.SumByFor();
 //ForZoj.ForByZoj2();
-int d;
-int m;
-Console.WriteLine("day:");
-d = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("month:");
-m = Convert.ToInt32(Console.ReadLine());
-if (m <= 6)
-  Console.WriteLine(((m - 1) * 31) + d);
-else
 
-    Console.WriteLine(((d+(30*(m - 7)))+6 * 31));
-        
+Console.Write("یک عدد وارد کنید: ");
+int number = int.Parse(Console.ReadLine());
+int i = 0;
+
+while (i<= number)
+
+{
+    Console.WriteLine(i++);
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
