@@ -11,11 +11,16 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 int x;
 Console.WriteLine("adad vared konid:");
 x = Convert.ToInt32(Console.ReadLine());
-for (int i = 1; i <= x; i *= 2)
+for (int i = 2; i < x; i += 1)
 {
 
-    Console.WriteLine(i);
+    if (x % i == 0)
+    {
+        Console.WriteLine("The number is not prime");
+       return;
+    }
 }
+Console.WriteLine("The number is prime");
 
 
 
