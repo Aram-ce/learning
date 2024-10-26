@@ -11,10 +11,10 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 int x;
 Console.WriteLine("adad vared konid:");
 x = Convert.ToInt32(Console.ReadLine());
-for (int i = 0; i <= x; i += 1)
+for (int i = 1; i <= x; i *= 2)
 {
-    if (i % 7 == 0)
-        Console.WriteLine("number" + i + " is  divaided");
+
+    Console.WriteLine(i);
 }
 
 
