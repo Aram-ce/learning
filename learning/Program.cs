@@ -6,23 +6,35 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 //Sum.Sum4Number();
 //FOR.SumByFor();
 //ForZoj.ForByZoj2();
-
-
-int x;
-Console.WriteLine("adad vared konid:");
-x = Convert.ToInt32(Console.ReadLine());
-for (int i = 2; i < x; i += 1)
+for (; ; )
+    
 {
+    Console.Write("adad vared konid ");
+    int num = int.Parse(Console.ReadLine());
 
-    if (x % i == 0)
+    if (IsPrime(num))
     {
-        Console.WriteLine("The number is not prime");
-       return;
+        Console.WriteLine($"adad {num} ast");
+    }
+    else
+    {
+        Console.WriteLine($"{num} nist");
     }
 }
-Console.WriteLine("The number is prime");
 
 
+static bool IsPrime(int number)
+{
+
+
+    if (number <= 1) return false;
+
+    for (int i = 2; i <= Math.Sqrt(number); i++)
+    {
+        if (number % i == 0) return false;
+    }
+    return true;
+}
 
 
 
