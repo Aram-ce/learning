@@ -6,12 +6,11 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 //Sum.Sum4Number();
 //FOR.SumByFor();
 //ForZoj.ForByZoj2();
-for (; ; )
-    
+for (; ; )  
 {
     Console.Write("adad vared konid ");
     int num = int.Parse(Console.ReadLine());
-
+    if (num == 0)return;
     if (IsPrime(num))
     {
         Console.WriteLine($"adad {num} ast");
