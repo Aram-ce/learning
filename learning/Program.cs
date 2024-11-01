@@ -6,34 +6,16 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 //Sum.Sum4Number();
 //FOR.SumByFor();
 //ForZoj.ForByZoj2();
-for (; ; )  
+
+for (int i = 0; i < 10; i++)
 {
-    Console.Write("adad vared konid ");
-    int num = int.Parse(Console.ReadLine());
-    if (num == 0)return;
-    if (IsPrime(num))
+    for (int j = 0; j < 10; j++)
     {
-        Console.WriteLine($"adad {num} ast");
+        Console.Write(" " + "aram");
     }
-    else
-    {
-        Console.WriteLine($"{num} nist");
-    }
+    Console.WriteLine();
 }
 
-
-static bool IsPrime(int number)
-{
-
-
-    if (number <= 1) return false;
-
-    for (int i = 2; i <= Math.Sqrt(number); i++)
-    {
-        if (number % i == 0) return false;
-    }
-    return true;
-}
 
 
 
