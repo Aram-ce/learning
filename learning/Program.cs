@@ -7,17 +7,30 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 //FOR.SumByFor();
 //ForZoj.ForByZoj2();
 
-for (int i = 1; i < 10; i++)
-{
-    for (int j = 1; j < 10; j++)
-    {
 
-        Console.Write("{0,4} ", i * j);
+
+
+ 
+for (int i = 1; i <= 7; i++)
+{
+    for (int j = 1; j <= 7; j++)
+    {
+        if (i==j)
+            Console.Write(1 + " ");
+
+       else if (i==4)
+            Console.Write(1 + " ");
+        else if (j==4)
+                Console.Write(1 + " ");
+        else if (i+j==8)
+            Console.Write(1 + " ");
+        else
+
+            Console.Write(0 + " ");
     }
     Console.WriteLine();
 }
-
-
+    
 
 
 
