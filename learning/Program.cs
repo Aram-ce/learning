@@ -9,28 +9,33 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 
+Console.Write("adad vared konid ");
+int x = int.Parse(Console.ReadLine());
 
- 
-for (int i = 1; i <= 7; i++)
+
+for (int i = 2; i <= x; i++)
 {
-    for (int j = 1; j <= 7; j++)
-    {
-        if (i==j)
-            Console.Write(1 + " ");
+    if (IsPrime(i))
+        Console.WriteLine(i + " adad aval hast");
 
-       else if (i==4)
-            Console.Write(1 + " ");
-        else if (j==4)
-                Console.Write(1 + " ");
-        else if (i+j==8)
-            Console.Write(1 + " ");
-        else
 
-            Console.Write(0 + " ");
-    }
-    Console.WriteLine();
 }
-    
+bool IsPrime(int a)
+{
+
+    for (int j = 2; j < a; j++)
+    {
+        if (a % j == 0)
+            return false;
+    }
+    return true;
+}
+
+
+
+
+
+
 
 
 
