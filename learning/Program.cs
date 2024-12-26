@@ -8,28 +8,27 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 //ForZoj.ForByZoj2();
 
 
+int n;
+Console.WriteLine("teded adad:");
+n = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("adad vared konid ");
-int x = int.Parse(Console.ReadLine());
+int sum=0;
 
-
-for (int i = 2; i <= x; i++)
+for (int i = 0; i < n; i++)
 {
-    if (IsPrime(i))
-        Console.WriteLine(i + " adad aval hast");
-
-
+    Console.WriteLine($"عدد {i + 1} را وارد کنید:");
+    int number = Convert.ToInt32(Console.ReadLine());
+    sum += number; // جمع کردن اعداد
 }
-bool IsPrime(int a)
-{
 
-    for (int j = 2; j < a; j++)
-    {
-        if (a % j == 0)
-            return false;
-    }
-    return true;
-}
+double average = (double)sum / n; // محاسبه میانگین
+
+Console.WriteLine($"sum: {sum}");
+Console.WriteLine($"avrage: {average}");
+    
+
+    
+
 
 
 
