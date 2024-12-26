@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using learning;
+using System;
 using System.ComponentModel.Design;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -7,27 +8,31 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 //FOR.SumByFor();
 //ForZoj.ForByZoj2();
 
+Console.WriteLine("reshteh vared konid:");
+string input = Console.ReadLine();
 
-int n;
-Console.WriteLine("teded adad:");
-n = Convert.ToInt32(Console.ReadLine());
+// معکوس کردن رشته
+string reversed = ReverseString(input);
 
-int sum=0;
+Console.WriteLine($"reshte makos shodeh: {reversed}");
 
-for (int i = 0; i < n; i++)
+// منتظر ماندن برای دریافت ورودی از کاربر قبل از بستن کنسول
+Console.WriteLine("enter ra feshar dahid.");
+Console.ReadLine();
+        
+
+        static string ReverseString(string s)
 {
-    Console.WriteLine($"عدد {i + 1} را وارد کنید:");
-    int number = Convert.ToInt32(Console.ReadLine());
-    sum += number; // جمع کردن اعداد
-}
+    char[] charArray = s.ToCharArray(); // تبدیل رشته به آرایه ی کاراکترها
+    Array.Reverse(charArray); // معکوس کردن آرایه
+    return new string(charArray);
+     } // تبدیل آرایه معکوس شده به رشته
 
-double average = (double)sum / n; // محاسبه میانگین
 
-Console.WriteLine($"sum: {sum}");
-Console.WriteLine($"avrage: {average}");
-    
 
-    
+
+
+
 
 
 
