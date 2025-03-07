@@ -1,38 +1,39 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using learning;
+using Microsoft.VisualBasic;
 using System;
 using System.ComponentModel.Design;
+using System.Numerics;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 //Sum.Sum4Number();
 //FOR.SumByFor();
-//ForZoj.ForByZoj2();
+//ForZoj.ForByZoj2();string s;
 
-Console.WriteLine("reshteh vared konid:");
-string input = Console.ReadLine();
+double a, b;
+string operitor;
 
-// معکوس کردن رشته
-string reversed = ReverseString(input);
+Console.WriteLine("amaliat ra vared konid ");
+operitor = Console.ReadLine();
 
-Console.WriteLine($"reshte makos shodeh: {reversed}");
+Console.WriteLine("adad aval ra vared konid:");
+a = Convert.ToDouble(Console.ReadLine());
 
-// منتظر ماندن برای دریافت ورودی از کاربر قبل از بستن کنسول
-Console.WriteLine("enter ra feshar dahid.");
-Console.ReadLine();
-        
+Console.WriteLine("adad dovom ra vared konid:");
+b = Convert.ToDouble(Console.ReadLine());
 
-        static string ReverseString(string s)
-{
-    char[] charArray = s.ToCharArray(); // تبدیل رشته به آرایه ی کاراکترها
-    Array.Reverse(charArray); // معکوس کردن آرایه
-    return new string(charArray);
-     } // تبدیل آرایه معکوس شده به رشته
-
-
-
-
-
-
+if (operitor == "+")
+    Console.WriteLine("jam: " + (a + b));
+else if (operitor == "-")
+    Console.WriteLine("tafrigh: " + (a - b));
+else if (operitor == "*")
+    Console.WriteLine("zarb: " + (a * b));
+else if (operitor == "/")
+    Console.WriteLine("taghsim: " + (a / b));
+else
+    Console.WriteLine("operitor na shenakht shod.");
+    
+    
 
 
 
